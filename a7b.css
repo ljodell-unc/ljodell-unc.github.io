@@ -1,0 +1,38 @@
+body{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: powderblue;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+div {
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+
+p {
+    padding-left: 30px;
+    color:darkslateblue;
+}
+
+img {
+    padding-left: 30px;
+}
+
+a {
+    padding-left: 30px;
+}
+
+#date{
+    padding-top: 20px;
+}
+
+#title{
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+#text{
+   padding-right: 20%;
+}
