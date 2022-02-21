@@ -1,4 +1,4 @@
-This is my website for Comm150, "Introduction to New Media."
+This is my website for Comm150, "_Introduction to New Media._"
 
 It consists of three assignments: 
 - **7B:** practicing website layouts by recreating a given recipe page
