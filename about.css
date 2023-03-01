@@ -1,0 +1,306 @@
+.contentContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-top: 20px;
+}
+.traitsContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.whoAmI {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #446670;
+    font-size: 30pt;
+    align-self: flex-start;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    animation: fadeInUp 1s;
+}
+
+.traitsList {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    align-self: flex-start;
+    padding-left: 70px;
+    color: #866258;
+    list-style-image: url('../images/bulletPoint_16x16.png');
+}
+.traits {
+    padding-bottom: 20px;
+}
+
+#trait1 {
+    animation: fadeInUpTrait1 2s;
+}
+
+#trait2 {
+    animation: fadeInUpTrait2 3.2s;
+}
+
+#trait3 {
+    animation: fadeInUpTrait3 4.4s;
+}
+
+#trait4 {
+    animation: fadeInUpTrait4 5.6s;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.headshot {
+    width: 60%;
+    padding-left: 30px;
+    margin:0;
+    max-height: 300px;
+    max-width: 300px;
+    animation: fadeInRight 1s;
+}
+
+.biotext {
+    width: 90%;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 13pt;
+    background-color: #f7e2c9;
+    border-radius: 20px;
+    animation: fadeInLeft 1s;
+}
+
+@keyframes fadeInUp {
+    0% {opacity: 0;
+        transform: translate(0, 20px);}
+    100% {opacity: 1;
+        transform: translate(0, 0px);}
+}
+
+@keyframes fadeInRight {
+    0% {opacity: 0;
+        transform: translate(20px, 0);}
+    100% {opacity: 1;
+        transform: translate(0px, 0);}
+}
+
+@keyframes fadeInLeft {
+    0% {opacity: 0;
+        transform: translate(-20px, 0);}
+    100% { opacity: 1;
+        transform: translate(0px, 0);}
+}
+
+@keyframes fadeInUpTrait1 {
+    0% {opacity: 0;
+        transform: translate(0, 20px);}
+    60% {opacity: 0;
+        transform: translate(0, 0px);}
+    100% {opacity: 1;
+        transform: translate(0, 0px);}
+}
+
+@keyframes fadeInUpTrait2 {
+    0% {opacity: 0;
+        transform: translate(0, 20px);}
+    60% {opacity: 0;
+        transform: translate(0, 0px);}
+    100% {opacity: 1;
+        transform: translate(0, 0px);}
+}
+
+@keyframes fadeInUpTrait3 {
+    0% {opacity: 0;
+        transform: translate(0, 20px);}
+    60% {opacity: 0;
+        transform: translate(0, 0px);}
+    100% {opacity: 1;
+        transform: translate(0, 0px);}
+}
+
+@keyframes fadeInUpTrait4 {
+    0% {opacity: 0;
+        transform: translate(0, 20px);}
+    60% {opacity: 0;
+        transform: translate(0, 0px);}
+    100% {opacity: 1;
+        transform: translate(0, 0px);}
+}
+
+
+
+.scrollArrow1 {
+    width: 50px;
+    /*position: relative;
+    bottom: 25px;*/
+    animation: scrollArrow 6s, scrollArrow1 4s;
+    animation-delay: 0s, 3s;
+    animation-iteration-count: 1, infinite;
+}
+
+.scrollArrow2 {
+    padding-bottom: 30px;
+    width: 50px;
+    /*position: relative;
+    bottom: 25px;*/
+    animation: scrollArrow 6s, scrollArrow2 4s;
+    animation-delay: 0s, 3s;
+    animation-iteration-count: 1, infinite;
+}
+
+@keyframes scrollArrow {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes scrollArrow1 {
+    0% {transform: translate(0, 0);}
+    60% {transform: translate(0, 0);}
+    75% {transform: translate(0, 10px);}
+    95% {transform: translate(0, 0);}
+}
+
+@keyframes scrollArrow2 {
+    0% {transform: translateY(0);}
+    60% { transform: translateY(0);}
+    65% {transform: translateY(0);}
+    80% {transform: translateY(10px);}
+    100% {transform: translateY(0);}
+}
+
+#swirl {
+    /*bottom: 5vh;*/
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.backgroundInfoContainer {
+    margin: auto;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whereImfrom {
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#beachPhoto {
+    width: 40%;
+    padding-right: 30px;
+}
+
+#whereImFromTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#446670;
+    font-size: 30pt;
+   
+   
+}
+
+#outerBanks{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    color: #866258;
+    font-size: 30pt;
+}
+
+.favoriteHobbies {
+    padding-top: 30pt;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#446670;
+    font-size: 30pt;
+}
+
+.hobbiesList {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Playfair Display', sans-serif;
+    color:#866258;
+    font-size: 15pt;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    padding: 10pt;
+    margin: 10pt;
+    font-weight: bold;
+    background-color: #f7e2c9;
+    border-radius: 10pt;
+    height: 80px;
+    width:110px;
+    text-align: center;
+}
+
+.carolina {
+    color: #7BAFD4;
+}
+
+.likeMovies {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+    color:#866258;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.favoriteMovies {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30pt;
+    color:#446670;
+    
+}
+
+.showSelections{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 15pt;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.selection {
+    padding: 10pt;
+    margin: 10pt;
+    
+    /*
+    font-weight: bold;
+    background-color: #f7e2c9;
+    border-radius: 10pt;
+    height: 180px;
+    width:110px;
+    text-align: center;
+    color:#866258
+    */
+}
+
+.appearOnScroll {
+    position: relative;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.appearOnScroll.active {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
