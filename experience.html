@@ -4,14 +4,98 @@
         <meta charset="UTF-8">
         <title>Experience</title>
         <link rel="stylesheet" type="text/css" href="./css/default.css">
+        <link rel="stylesheet" type="text/css" href="./css/experience.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Merriweather&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+        
     </head>
-    <body>
+    <body style="background-color: #FEE9E1;">
         <div class="navigation">
             <a href="index.html"><button class="homeButton">Home</button></a>
             <a href="about.html"><button class="aboutButton">About</button></a>
             <a href="experience.html"><button class="experienceButton">Experience</button></a>
             <a href="contact.html"><button class="contactButton">Contact</button></a>
         </div>
-        <p>Experience</p>
+
+        <svg class="secondaryBackground" width="431" height="432" viewBox="0 0 431 432" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <rect width="431" height="432" fill="#866258" />
+            </svg>                              
+        
+
+        <div class="content">
+            <div class="backgroundSkills">
+                <div class="courseList">
+                    <p class="coursesSuchAs">Courses such as:</p>
+                    <p class="class class1">Game Design</p>
+                    <p class="class class2">Software Engineering</p>
+                    <p class="class class3">User Interfaces</p>
+                    <p class="class class4">Modern Web Programming</p>
+                </div>
+                
+                <div class="skillList">
+                    <p class="ledMeToHave">Led me to have <br>skills in:</p>
+                    <p class="skill skill1">HTML</p>
+                    <p class="skill skill2">Python</p>
+                    <p class="skill skill3">CSS</p>
+                    <p class="skill skill4">VSCode</p>
+                    <p class="skill skill5">Django</p>
+                    <p class="skill skill6">JavaScript</p>
+                </div>
+            </div>
+
+            <img src="./images/downArrow.png" alt="Scroll down arrow" class="scrollArrow1">
+            <img src="./images/downArrow.png" alt="Scroll down arrow" class="scrollArrow2">
+
+            <p>Past Projects</p>
+            <div class="projects">
+                <div class="website">
+                    <p class="websiteTitle">This website!</p>
+                    <div>
+                        <p>*insert Image carousel</p>
+                    </div>
+                    <p>insert desc</p>
+                </div>
+                <div class="lmm">
+                    <p class="lmmTitle">Literary Mindfulness Meditation</p>
+                    <div>
+                        <p>*insert Image carousel</p>
+                    </div>
+                    <p>Our team utilized a mix of Heroku, GitHub, and Django to create
+                        an online, Parkinson's friendly journaling platform. My work 
+                        connecting the Django backend to the frontend allowed for 
+                        random combinations of images and quotes to be displayed as
+                        prompts for daily journaling.
+                    </p>
+                </div>
+                <div class="dor">
+                    <p class="dorTitle">Drink or Rethink</p>
+                    <div>
+                        <p>*insert Image carousel</p>
+                    </div>
+                    <p>Our team created a mobile app concept based entirely around 
+                        designing for the user experience. We conducted user
+                        interviews/testing, created user personas, constructed empathy maps,
+                        and more. Overall, the app aimed to crowdsource data about wait times
+                        for local establishments, with a focus on user-centered design.
+                    </p>
+                </div>
+            </div>
+
+            <div class="work">
+                <p>Past Work:</p>
+                <p>The Town of Kill Devil Hills</p>
+                <p><em>Planning and Administration Intern</em></p>
+
+            </div>
+
+
+        </div>
+        
+        <!-- GSAP script call -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    
+        <script src="./scripts/experienceAnimations.js"></script>
     </body>
 </html>
