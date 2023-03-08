@@ -1,0 +1,182 @@
+.secondaryBackground {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+    height: 100%;
+    width: 50%;
+    box-sizing: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.courseList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 10px;
+    
+}
+
+.coursesSuchAs {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 20pt;
+    color:#f7e2c9;
+    
+}
+
+.class {
+    background-color: #f7e2c9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #866258;
+    box-shadow: -3px 3px 6px #634942;
+}
+
+.ledMeToHave {
+    margin: 10px;
+    padding-bottom: 10px;
+    
+    padding-left: 10px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 20pt;
+    color: #446670;
+}
+
+.skillList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10pt;
+    align-items: flex-end;
+    justify-content: center;  
+    
+}
+
+.skill {
+    background-color: #f7e2c9;
+    border-radius: 10px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #866258;
+    padding: 10pt;
+    margin: 5px;
+    box-shadow: 3px 3px 6px #a6947e;
+}
+
+.scrollArrow1 {
+    width: 50px;
+    /*position: relative;
+    bottom: 25px;*/
+    animation: scrollArrow 15s, scrollArrow1 4s;
+    animation-delay: 0s, 10s;
+    animation-iteration-count: 1, infinite;
+}
+
+.scrollArrow2 {
+    padding-bottom: 30px;
+    width: 50px;
+    /*position: relative;
+    bottom: 25px;*/
+    animation: scrollArrow 15s, scrollArrow2 4s;
+    animation-delay: 0s, 10s;
+    animation-iteration-count: 1, infinite;
+}
+
+@keyframes scrollArrow {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes scrollArrow1 {
+    0% {transform: translate(0, 0);}
+    60% {transform: translate(0, 0);}
+    75% {transform: translate(0, 10px);}
+    95% {transform: translate(0, 0);}
+}
+
+@keyframes scrollArrow2 {
+    0% {transform: translateY(0);}
+    60% { transform: translateY(0);}
+    65% {transform: translateY(0);}
+    80% {transform: translateY(10px);}
+    100% {transform: translateY(0);}
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+
+.websiteTitle {
+    font-weight: 700;
+}
+
+.website {
+    background-color:#866258;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14pt;
+    color:#f7e2c9;
+}
+
+.lmmTitle {
+    font-weight: 700;
+}
+
+.lmm {
+    background-color:#f7e2c9;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14pt;
+    color:#866258;
+}
+
+.dorTitle {
+    font-weight: 700;
+}
+
+.dor {
+    background-color:#a6947e;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14pt;
+    color: #f7e2c9;
+}

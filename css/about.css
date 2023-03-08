@@ -176,7 +176,7 @@
 }
 
 #swirl {
-    bottom: 5vh;
+    /*bottom: 5vh;*/
     width: 100%;
     padding: 0;
     margin: 0;
@@ -199,9 +199,56 @@
     align-items: center;
 }
 
+.photoGallery {
+    width: 40%;
+}
+
 #beachPhoto {
     width: 40%;
-    padding-right: 30px;
+    position: relative;
+    top: 10vh;
+    left: -5vw;
+    
+    z-index: 1;
+
+}
+
+.beachPhoto2 {
+    width: 40%;
+    position: relative;
+    left: 22vw;
+    
+}
+
+.soundPhoto{
+    width: 40%;
+    
+    position: relative;
+    
+}
+
+.photo{
+    margin: 0;
+    padding:0;
+}
+
+.animatedPhoto {
+    animation: swing 3s;
+    
+}
+
+@keyframes swing {
+    0% {transform: rotate(15deg);}
+    15% {transform: rotate(-15deg);}
+    25% {transform: rotate(6deg);}
+    33% {transform: rotate(-6deg);}
+    40% {transform: rotate(2deg);}
+    45% {transform: rotate(-2deg);}
+    50% {transform: rotate(1deg);}
+    55% {transform: rotate(-1deg);}
+    60% {transform: rotate(.5deg);}
+    65% {transform: rotate(-.5deg);}
+    70% {transform: rotate(0deg);}
 }
 
 #whereImFromTitle{
@@ -217,6 +264,7 @@
     font-weight: bold;
     color: #866258;
     font-size: 30pt;
+    flex-grow: 2;
 }
 
 .favoriteHobbies {
@@ -229,12 +277,13 @@
 .hobbiesList {
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family: 'Playfair Display', sans-serif;
     color:#866258;
     font-size: 15pt;
     flex-wrap: wrap;
+    
 }
 
 .hobby {
@@ -260,10 +309,37 @@
     margin-bottom: 30px;
 }
 
+.secondScrollArrow1 {
+    width: 50px;
+    /*position: relative;
+    bottom: 25px;*/
+}
+
+.secondScrollArrow2 {
+    padding-bottom: 30px;
+    width: 50px;
+    /*position: relative;
+    bottom: 25px;*/
+    
+}
+
+.secondScroll1Active {
+    animation: scrollArrow1 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.secondScroll2Active {
+    animation: scrollArrow2 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
 .favoriteMovies {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30pt;
     color:#446670;
+    padding-top: 20px;
     
 }
 
@@ -272,14 +348,17 @@
     font-size: 15pt;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /*align-items: center;*/
     flex-wrap: wrap;
+    padding-bottom: 60px;
 
 }
 
 .selection {
     padding: 10pt;
-    margin: 10pt;
+    display: block;
+    margin: auto;
+    text-align: center;
     
     /*
     font-weight: bold;
@@ -290,6 +369,13 @@
     text-align: center;
     color:#866258
     */
+}
+
+.lotr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 150px;
 }
 
 .appearOnScroll {
