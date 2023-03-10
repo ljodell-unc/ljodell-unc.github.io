@@ -6,88 +6,115 @@
         <link rel="stylesheet" type="text/css" href="./css/default.css">
         <link rel="stylesheet" type="text/css" href="./css/experience.css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Merriweather&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    
         
     </head>
-    <body style="background-color: #FEE9E1;">
-        <div class="navigation">
-            <a href="index.html"><button class="homeButton">Home</button></a>
-            <a href="about.html"><button class="aboutButton">About</button></a>
-            <a href="experience.html"><button class="experienceButton">Experience</button></a>
-            <a href="contact.html"><button class="contactButton">Contact</button></a>
-        </div>
-
-        <svg class="secondaryBackground" width="431" height="432" viewBox="0 0 431 432" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <rect width="431" height="432" fill="#866258" />
-            </svg>                              
-        
+    <body style="background-color: #FEE9E1;">                          
 
         <div class="content">
-            <div class="backgroundSkills">
-                <div class="courseList">
-                    <p class="coursesSuchAs">Courses such as:</p>
-                    <p class="class class1">Game Design</p>
-                    <p class="class class2">Software Engineering</p>
-                    <p class="class class3">User Interfaces</p>
-                    <p class="class class4">Modern Web Programming</p>
+            <div class="section">
+                <div class="navigation">
+                    <a href="index.html"><button class="homeButton">Home</button></a>
+                    <a href="about.html"><button class="aboutButton">About</button></a>
+                    <a href="experience.html"><button class="experienceButton">Experience</button></a>
+                    <a href="contact.html"><button class="contactButton">Contact</button></a>
+                </div> 
+            
+                <div class="backgroundSkills">
+                    <div class="courseList">
+                        <p class="coursesSuchAs">Courses such as:</p>
+                        <p class="class class1">Game Design</p>
+                        <p class="class class2">Software Engineering</p>
+                        <p class="class class3">User Interfaces</p>
+                        <p class="class class4">Modern Web Programming</p>
+                    </div>
+                    
+                    <div class="skillList">
+                        <p class="ledMeToHave">Led me to have skills in:</p>
+                        <div class="skillContainer1">
+                            <div class="skillContainer2">
+                                <p class="skill skill1">HTML</p>
+                                <p class="skill skill3">Python</p>
+                                <p class="skill skill5">CSS</p>
+                            </div>
+                            <div class="skillContainer2">
+                                <p class="skill skill2">VSCode</p>
+                                <p class="skill skill4">Django</p>
+                                <p class="skill skill6">JavaScript</p>
+                                
+                            </div>
+                        </div>
+                        <p class="skill skill7 manyMore">And Many More!</p>
+                        
+                    </div>
                 </div>
+
+
+                <div class="arrowContainer">
+                    <img src="./images/downArrow.png" alt="Scroll down arrow" class="scrollArrow1">
+                    <img src="./images/downArrow.png" alt="Scroll down arrow" class="scrollArrow2"> 
+                </div>
+            
                 
-                <div class="skillList">
-                    <p class="ledMeToHave">Led me to have <br>skills in:</p>
-                    <p class="skill skill1">HTML</p>
-                    <p class="skill skill2">Python</p>
-                    <p class="skill skill3">CSS</p>
-                    <p class="skill skill4">VSCode</p>
-                    <p class="skill skill5">Django</p>
-                    <p class="skill skill6">JavaScript</p>
+            </div>
+            
+            <div class="section">
+                <div class="pastProjects">
+                    <p class="pastProjectsTitle">Past Projects</p>
+                    <div class="projects">
+                        <div class="website">
+                            <p class="websiteTitle">This website!</p>
+                            <div>
+                                <img src="./images/homepageimg.jpg" class="slideImage">
+                            </div>
+                            <p>I utilied a mix of HTML, CSS, JavaScript, and the GSAP Library to create this very website!</p>
+                        </div>
+                        <div class="lmm">
+                            <p class="lmmTitle">Literary Mindfulness Meditation</p>
+                            <div>
+                                <img src="./images/lmm.png" class="slideImage">
+                            </div>
+                            <p>Our team utilized a mix of Heroku, GitHub, and Django to create
+                                an online, Parkinson's friendly journaling platform. My work 
+                                connecting the Django backend to the frontend allowed for 
+                                random combinations of images and quotes to be displayed as
+                                prompts for daily journaling.
+                            </p>
+                        </div>
+                        <div class="dor">
+                            <p class="dorTitle">Drink or Rethink</p>
+                            <div>
+                                <img src="./images/dor.png" class="slideImage">
+                            </div>
+                            <p>Our team created a mobile app concept based entirely around 
+                                designing for the user experience. We conducted user
+                                interviews/testing, created user personas, constructed empathy maps,
+                                and more. Overall, the app aimed to crowdsource data about wait times
+                                for local establishments, with a focus on user-centered design.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <img src="./images/downArrow.png" alt="Scroll down arrow" class="scrollArrow1">
-            <img src="./images/downArrow.png" alt="Scroll down arrow" class="scrollArrow2">
-
-            <p>Past Projects</p>
-            <div class="projects">
-                <div class="website">
-                    <p class="websiteTitle">This website!</p>
-                    <div>
-                        <p>*insert Image carousel</p>
+            <div class="section">
+                <div class="work">
+                    <p class="pastWork">Past Work:</p>
+                    <p class="business">The Town of Kill Devil Hills</p>
+                    <p class="jobTitle"><em>Planning and Administration Intern</em></p>
+                    <div class="descContainer">
+                        <img src="./images/kdhTownSeal.png" class="kdhSeal">
+                        <ul>
+                            <li class="desc">Digitized and cataloged over 30 years worth of planning and administration records
+                                (permits, personnel documents, etc.), restructuring access and improving record retention
+                                standards</li>
+                            <li class="desc">Identified and resolved broken and missing components to bring the Town website into ADA compliance</li>
+                            <li class="desc">Designed Figma mockup for Town website improvements focused on enhancing user experience</li>
+                            <li class="desc">Produced polished inforgraphic content for social media and Town events with Canva</li>
+                        </ul>
                     </div>
-                    <p>insert desc</p>
-                </div>
-                <div class="lmm">
-                    <p class="lmmTitle">Literary Mindfulness Meditation</p>
-                    <div>
-                        <p>*insert Image carousel</p>
-                    </div>
-                    <p>Our team utilized a mix of Heroku, GitHub, and Django to create
-                        an online, Parkinson's friendly journaling platform. My work 
-                        connecting the Django backend to the frontend allowed for 
-                        random combinations of images and quotes to be displayed as
-                        prompts for daily journaling.
-                    </p>
-                </div>
-                <div class="dor">
-                    <p class="dorTitle">Drink or Rethink</p>
-                    <div>
-                        <p>*insert Image carousel</p>
-                    </div>
-                    <p>Our team created a mobile app concept based entirely around 
-                        designing for the user experience. We conducted user
-                        interviews/testing, created user personas, constructed empathy maps,
-                        and more. Overall, the app aimed to crowdsource data about wait times
-                        for local establishments, with a focus on user-centered design.
-                    </p>
+                    
                 </div>
             </div>
-
-            <div class="work">
-                <p>Past Work:</p>
-                <p>The Town of Kill Devil Hills</p>
-                <p><em>Planning and Administration Intern</em></p>
-
-            </div>
-
 
         </div>
         
@@ -96,6 +123,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
     
+        
+
         <script src="./scripts/experienceAnimations.js"></script>
     </body>
 </html>
