@@ -1,78 +1,93 @@
-.secondaryBackground {
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: -1;
-    height: 100%;
-    width: 50%;
-    box-sizing: none;
+html body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+    height: 100vh;
 }
 
 .backgroundSkills {
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    /*THIS IS WHERE TO ADJUST IF I WANT THINGS CLOSER TO NAVIGATION*/
+    align-items: flex-start;
     flex-wrap: wrap;
-    width: 100%;
-    
+    height: 100vh;
 }
 
 .courseList {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding-right: 10px;
+  
     
 }
 
 .coursesSuchAs {
-    margin: 10px;
-    padding-bottom: 10px;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
-    font-size: 20pt;
-    color:#f7e2c9;
+    font-size: 5vh;
+    color: #446670;
+    margin-left: 10px;
     
 }
 
 .class {
     background-color: #f7e2c9;
-    padding: 20px;
-    margin: 10px;
     border-radius: 10px;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
+    font-size: 3.2vh;
     color: #866258;
     box-shadow: -3px 3px 6px #634942;
-}
-
-.ledMeToHave {
+    padding: 10px;
     margin: 10px;
-    padding-bottom: 10px;
-    
-    padding-left: 10px;
-    font-family: 'Playfair Display', sans-serif;
-    font-weight: 700;
-    font-size: 20pt;
-    color: #446670;
 }
 
 .skillList {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10pt;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;  
+    max-width: 50%;
+   
+}
+
+.ledMeToHave {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 5vh;
+    color: #446670;
+    margin-left: 10px;
+}
+
+.skillContainer1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.skillContainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* DONE IN ORDER TO HAVE ALL SKILLS THE SAME WIDTH
+    justify-content: center;
+    align-items: flex-start;*/
 }
 
 .skill {
@@ -80,26 +95,37 @@
     border-radius: 10px;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
+    font-size: 3.2vh;
     color: #866258;
-    padding: 10pt;
-    margin: 5px;
-    box-shadow: 3px 3px 6px #a6947e;
+    box-shadow: 3px 3px 6px #634942;
+    padding: 10px;
+    margin: 10px;
+}
+
+.manyMore {
+    background-color:#866258;
+    color:#f7e2c9;
+}
+
+.arrowContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -150px;
 }
 
 .scrollArrow1 {
     width: 50px;
-    /*position: relative;
-    bottom: 25px;*/
     animation: scrollArrow 15s, scrollArrow1 4s;
     animation-delay: 0s, 10s;
     animation-iteration-count: 1, infinite;
 }
 
 .scrollArrow2 {
-    padding-bottom: 30px;
     width: 50px;
-    /*position: relative;
-    bottom: 25px;*/
+    bottom: 140px;
     animation: scrollArrow 15s, scrollArrow2 4s;
     animation-delay: 0s, 10s;
     animation-iteration-count: 1, infinite;
@@ -126,6 +152,22 @@
     100% {transform: translateY(0);}
 }
 
+.pastProjects {
+    background-color:#FEE9E1;
+    height: 100vh;
+}
+
+.pastProjectsTitle {
+    color:#FEE9E1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 6vh;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    opacity: 0;
+    
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -136,19 +178,23 @@
     padding:0;
 }
 
+.slideImage{
+    width: 100%;
+}
+
 .websiteTitle {
     font-weight: 700;
 }
 
 .website {
-    background-color:#866258;
+    background-color:#f7e2c9;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     width: 30%;
     font-family: 'Playfair Display', sans-serif;
-    font-size: 14pt;
-    color:#f7e2c9;
+    font-size: 2.5vh;
+    color: #866258;
 }
 
 .lmmTitle {
@@ -162,7 +208,7 @@
     border-radius: 10px;
     width: 30%;
     font-family: 'Playfair Display', sans-serif;
-    font-size: 14pt;
+    font-size: 2.5vh;
     color:#866258;
 }
 
@@ -171,12 +217,52 @@
 }
 
 .dor {
-    background-color:#a6947e;
+    background-color:#f7e2c9;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     width: 30%;
     font-family: 'Playfair Display', sans-serif;
-    font-size: 14pt;
-    color: #f7e2c9;
+    font-size: 2.5vh;
+    color: #866258;
+}
+
+.work {
+    padding: 10px;
+    margin: 30px;
+}
+
+.pastWork{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #446670;
+    font-size: 6vh;
+}
+
+.business{
+    font-family: 'Playfair Display', sans-serif;
+    color: #866258;
+    font-weight: 700;
+    font-size: 3vh;
+}
+
+.jobTitle{
+    font-family: 'Playfair Display', sans-serif;
+    color: #866258;
+    font-size: 3vh;
+}
+
+.descContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kdhSeal {
+    width: 15vw;
+}
+
+.desc {
+    font-family: 'Playfair Display', sans-serif;
+    color: #634942;
+    font-size: 2.5vh;
+    width: 50%;
 }
