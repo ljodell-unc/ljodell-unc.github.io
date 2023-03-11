@@ -18,7 +18,6 @@ html body {
 .backgroundSkills {
     display: flex;
     justify-content: center;
-
     /*THIS IS WHERE TO ADJUST IF I WANT THINGS CLOSER TO NAVIGATION*/
     align-items: flex-start;
     flex-wrap: wrap;
@@ -162,13 +161,13 @@ html body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 6vh;
     text-align: center;
-    padding: 30px;
+    padding-top: 30px;
     margin: 10px;
     opacity: 0;
     
 }
 
-.projects {
+.projectsDesktop {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -176,6 +175,63 @@ html body {
     width: 100%;
     margin: 0;
     padding:0;
+}
+
+.projectsMobile {
+    padding: 10px;
+    display: none;
+}
+
+.collapseInstructions {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FEE9E1;
+    font-size: 3vh;
+}
+
+.collapseMenu {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vh;
+    color: #866258;
+    background-color: #FEE9E1;
+    cursor: pointer;
+    height: 6vh;
+}
+
+.collapseMenu:hover {
+    background-color:#f7e2c9;
+}
+
+.collapseActive {
+    background-color:#f7e2c9;
+}
+
+.collapseContent {
+    background-color: #f7e2c9;
+    width:100%;
+    font-family: 'Playfair Display', sans-serif;
+    color: #866258;
+    display: none;
+    overflow: hidden;
+}
+
+.collapseContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.collapseSlideImage {
+    width: 50%;
 }
 
 .slideImage{
@@ -254,6 +310,7 @@ html body {
 .descContainer {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .kdhSeal {
@@ -264,5 +321,39 @@ html body {
     font-family: 'Playfair Display', sans-serif;
     color: #634942;
     font-size: 2.5vh;
-    width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .coursesSuchAs  {
+        font-size: 5vw; 
+    }
+    .ledMeToHave {
+        font-size: 5vw; 
+    }
+    
+    .class  {
+        font-size: 3.2vw;
+    }
+
+    .skill {
+        font-size: 3.2vw;
+    }
+    
+    .projectsMobile {
+        display: block;
+    }
+    .projectsDesktop {
+        display: none;
+    }
+    .pastWork {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .desc {
+        font-size: 4vw;
+    }
 }
