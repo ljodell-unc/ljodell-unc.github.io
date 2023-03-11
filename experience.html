@@ -62,7 +62,7 @@
             <div class="section">
                 <div class="pastProjects">
                     <p class="pastProjectsTitle">Past Projects</p>
-                    <div class="projects">
+                    <div class="projectsDesktop">
                         <div class="website">
                             <p class="websiteTitle">This website!</p>
                             <div>
@@ -93,6 +93,48 @@
                                 and more. Overall, the app aimed to crowdsource data about wait times
                                 for local establishments, with a focus on user-centered design.
                             </p>
+                        </div>
+                    </div>
+                    <div class="projectsMobile">
+                        <p class="collapseInstructions">Click on the collapsible menu items below to learn more!</p>
+                        <button type="button" class="collapseMenu">This Website!</button>
+                        <div class="collapseContent">
+                            <div class="collapseContentContainer">
+                                <div>
+                                    <img src="./images/homepageimg.jpg" class="collapseSlideImage">
+                                </div>
+                                <p>I utilized a mix of HTML, CSS, JavaScript, and the GSAP Library to create this very website!</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapseMenu">Literary Mindfulness Meditation</button>
+                        <div class="collapseContent">
+                            <div class="collapseContentContainer">
+                                <div>
+                                    <img src="./images/lmm.png" class="collapseSlideImage">
+                                </div>
+                                <p>Our team utilized a mix of Heroku, GitHub, and Django to create
+                                    an online, Parkinson's friendly journaling platform. My work 
+                                    connecting the Django backend to the frontend allowed for 
+                                    random combinations of images and quotes to be displayed as
+                                    prompts for daily journaling.
+                                </p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="collapseMenu">Drink or Rethink</button>
+                        <div class="collapseContent">
+                            <div class="collapseContentContainer">
+                                <div>
+                                    <img src="./images/dor.png" class="collapseSlideImage">
+                                </div>
+                                <p>Our team created a mobile app concept based entirely around 
+                                    designing for the user experience. We conducted user
+                                    interviews/testing, created user personas, constructed empathy maps,
+                                    and more. Overall, the app aimed to crowdsource data about wait times
+                                    for local establishments, with a focus on user-centered design.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,8 +172,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
     
-        
-
+        <script src="./scripts/collapsibleMenu.js"></script>
         <script src="./scripts/experienceAnimations.js"></script>
     </body>
 </html>
