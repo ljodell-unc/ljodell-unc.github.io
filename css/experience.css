@@ -2,6 +2,7 @@ html body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #FEE9E1;
 }
 
 .content {
@@ -154,6 +155,8 @@ html body {
 .pastProjects {
     background-color:#FEE9E1;
     height: 100vh;
+    margin: 0;
+   padding: 0;
 }
 
 .pastProjectsTitle {
@@ -284,27 +287,35 @@ html body {
 }
 
 .work {
-    padding: 10px;
-    margin: 30px;
+    background-color:#866258;
+    height: 100vh;
 }
 
 .pastWork{
     font-family: 'Josefin Sans', sans-serif;
-    color: #446670;
+    color: #FEE9E1;
     font-size: 6vh;
+    padding: 30px;
+    margin: 0;
 }
 
 .business{
     font-family: 'Playfair Display', sans-serif;
-    color: #866258;
+    color: #FEE9E1;
     font-weight: 700;
     font-size: 3vh;
+    padding-left: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .jobTitle{
     font-family: 'Playfair Display', sans-serif;
-    color: #866258;
+    color: #FEE9E1;
     font-size: 3vh;
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .descContainer {
@@ -315,12 +326,14 @@ html body {
 
 .kdhSeal {
     width: 15vw;
+    padding-left: 30px;
 }
 
 .desc {
     font-family: 'Playfair Display', sans-serif;
-    color: #634942;
+    color: #FEE9E1;
     font-size: 2.5vh;
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 1200px) {

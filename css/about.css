@@ -1,10 +1,28 @@
+html body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FEE9E1;
+}
+
+.content {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
 .contentContainer {
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
     padding-top: 20px;
 }
 .traitsContainer {
@@ -13,12 +31,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
 }
 .whoAmI {
     font-family: 'Josefin Sans', sans-serif;
     color: #446670;
-    font-size: 30pt;
+    font-size: 7vh;
     align-self: flex-start;
     padding-bottom: 10px;
     margin-bottom: 0;
@@ -27,10 +45,11 @@
 
 .traitsList {
     font-family: 'Playfair Display', sans-serif;
-    font-size: 20pt;
+    font-size: 5vh;
     font-weight: bold;
     align-self: flex-start;
     padding-left: 70px;
+    padding-bottom: 0;
     color: #866258;
     list-style-image: url('../images/bulletPoint_16x16.png');
 }
@@ -57,11 +76,12 @@
 }
 
 .headshot {
-    width: 60%;
-    padding-left: 30px;
+    width: 50vh;
+    padding-left: 20px;
+    padding-bottom: 0;
     margin:0;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 600px;
+    max-width: 600px;
     animation: fadeInRight 1s;
 }
 
@@ -180,6 +200,9 @@
     width: 100%;
     padding: 0;
     margin: 0;
+    position: relative;
+    top: -200px;
+    z-index: -1;
 }
 
 .backgroundInfoContainer {
@@ -193,7 +216,7 @@
 
 .whereImfrom {
     margin: 0;
-    padding:0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,8 +277,8 @@
 #whereImFromTitle{
     font-family: 'Josefin Sans', sans-serif;
     color:#446670;
-    font-size: 30pt;
-   
+    font-size: 7vh;
+    padding-left: 20px;
    
 }
 
@@ -263,8 +286,9 @@
     font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
     color: #866258;
-    font-size: 30pt;
-    flex-grow: 2;
+    font-size: 7vh;
+    padding-left: 20px;
+    /*flex-grow: 2;*/
 }
 
 .favoriteHobbies {
@@ -390,3 +414,20 @@
     opacity: 1;
 }
 
+@media screen and (max-width: 1200px) {
+    #swirl {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1950px) {
+    #swirl {
+        max-height: 762.9px;
+    }
+}
+
+@media screen and (max-height: 1080px) {
+    #swirl { 
+        max-height: 708.37px;
+    }
+}
