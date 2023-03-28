@@ -28,3 +28,10 @@ gsap.to(".pastProjects", {scrollTrigger: {
     toggleActions: "restart pause restart pause"}, 
     duration: 1.5,
     backgroundColor: "#866258"});
+
+//third section background/text change
+gsap.to(".work", {scrollTrigger: {
+    trigger: ".work",
+    toggleActions: "restart pause restart pause"},
+    duration: 1.5,
+    backgroundColor: "#446670"});
