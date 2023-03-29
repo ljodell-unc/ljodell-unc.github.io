@@ -12,24 +12,25 @@
         <script src="./scripts/appearOnScroll.js"></script>
     </head>
     <body>
-        <div class="navigation">
-            <a href="index.html"><button class="homeButton">Home</button></a>
-            <a href="about.html"><button class="aboutButton">About</button></a>
-            <a href="experience.html"><button class="experienceButton">Experience</button></a>
-            <a href="contact.html"><button class="contactButton">Contact</button></a>
-        </div>
-
+        
         <div class="content">
+            
             <div class="section">
+                <div class="navigation">
+                    <a href="index.html"><button class="homeButton">Home</button></a>
+                    <a href="about.html"><button class="aboutButton">About</button></a>
+                    <a href="experience.html"><button class="experienceButton">Experience</button></a>
+                    <a href="contact.html"><button class="contactButton">Contact</button></a>
+                </div>
                 <div class="contentContainer">
                     <div class="traitsContainer">
                         <div>
                             <p class="whoAmI">WHO AM I?</p>
                             <ul class="traitsList">
-                                <li class="traits" id="trait1">Dedicated</li>
-                                <li class="traits" id="trait2">Passionate</li>
-                                <li class="traits" id="trait3">Nature Loving</li>
-                                <li class="traits" id="trait4">Computer Scientist</li>
+                                <li class="traits trait1">Dedicated</li>
+                                <li class="traits trait2">Passionate</li>
+                                <li class="traits trait3">Nature Loving</li>
+                                <li class="traits trait4">Computer Scientist</li>
                             </ul>
                         </div>
                         <img src="./images/headshot2.png" alt="An image of Jill smiling" class="headshot">
@@ -125,5 +126,11 @@
             <!--</div>-->
         </div>
             
+        <!-- GSAP script call -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+
+        <script src="./scripts/aboutAnimations.js"></script>
     </body>
 </html>
