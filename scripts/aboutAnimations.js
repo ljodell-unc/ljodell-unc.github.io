@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({defaults: {duration: 0.65, opacity: 0}});
-let arrowSequence = gsap.timeline();
 tl.fromTo(".whoAmI", {y: 30}, {duration: 1, opacity: 1, y:0});
 tl.fromTo(".headshot", {x: 30}, {duration: 1, opacity: 1, x:0}, "<");
 tl.fromTo("#swirl", {x:-30}, {duration: 1, opacity: 1, x:0}, "<");
@@ -13,47 +12,53 @@ tl.fromTo(".scrollArrow2", {}, {duration: 3, opacity: 1, onComplete: move(".scro
 
 ScrollTrigger.defaults({scroller:".content"});
 
-// Photo Gallery Animations (fade in and swing)
-gsap.set(".photoGallery", {y: 20});
-gsap.set(".soundPhoto", {y: 20, rotation: 90});
-gsap.set(".beachPhoto", {y: 20, rotation: 90});
-gsap.set(".beachPhoto2", {y: 20, rotation: 90});
+// Second Section Photo Gallery Animations (fade in and swing, first time only)
+let tl2 = gsap.timeline({scrollTrigger: {
+    trigger: ".section2",
+    toggleActions: "play none none none"},
+    defaults: {duration: 2}});
 
-gsap.to(".photoGallery", {scrollTrigger: {
+tl2.fromTo(".photoGallery", {y: 20, opacity: 0}, {opacity: 1, y: 0, repeat: 0});
+tl2.fromTo(".soundPhoto", {rotation: 90}, 
+    {rotation: 0, transformOrigin: "top 50%", ease: Elastic.easeOut.config(1, 0.3)}, "<");
+tl2.fromTo(".beachPhoto", {rotation: 90}, 
+    {duration: 2.5, rotation: 0, transformOrigin: "top 50%", ease: Elastic.easeOut.config(1, 0.3)}, "<");
+tl2.fromTo(".beachPhoto2", {rotation: 90}, 
+    {duration: 2.3, rotation: 0, transformOrigin: "top 50%", ease: Elastic.easeOut.config(1, 0.3)}, "<");
+
+// Second Section Photo Gallery Animations (repeating swing)
+let tl2_2 = gsap.timeline({scrollTrigger: {
     trigger: ".section2",
     toggleActions: "restart pause restart pause"},
-    immediateRender: false,
-    duration: 1.5,
-    opacity: 1,
-    y: 0});
+    defaults: {duration: 2}});
 
-gsap.to(".soundPhoto", {scrollTrigger: {
+tl2_2.fromTo(".soundPhoto", {rotation: 90}, 
+    {rotation: 0, transformOrigin: "top 50%", ease: Elastic.easeOut.config(1, 0.3)}, "<");
+tl2_2.fromTo(".beachPhoto", {rotation: 90}, 
+    {duration: 2.5, rotation: 0, transformOrigin: "top 50%", ease: Elastic.easeOut.config(1, 0.3)}, "<");
+tl2_2.fromTo(".beachPhoto2", {rotation: 90}, 
+    {duration: 2.3, rotation: 0, transformOrigin: "top 50%", ease: Elastic.easeOut.config(1, 0.3)}, "<");
+
+// "Where am I From" text fade in and arrow animations
+let tl3 = gsap.timeline({scrollTrigger: {
     trigger: ".section2",
-    toggleActions: "restart pause restart pause"},
-    immediateRender: false,
-    duration: 2,
-    transformOrigin: "top 50%",
-    rotation: 0,
-    ease: Elastic.easeOut.config(1, 0.3)});
+    toggleActions: "play none none none"},
+    defaults: {opacity: 0}});
 
-gsap.to(".beachPhoto", {scrollTrigger: {
-    trigger: ".section2",
-    toggleActions: "restart pause restart pause"},
-    immediateRender: false,
-    duration: 2.5,
-    transformOrigin: "top 50%",
-    rotation: 0,
-    ease: Elastic.easeOut.config(1, 0.3)});
+tl3.fromTo(".whereImFromTitle", {y: -20}, {duration: 1, opacity: 1, y: 0});
+tl3.fromTo(".outerBanks", {x: 20}, {duration: 1, opacity: 1, x:0}, "-=0.5");
+tl3.fromTo(".biotext", {y: 20}, {duration: 1, opacity: 1, y: 0}, "-=0.5");
+tl3.fromTo(".secondScrollArrow1", {}, {duration: 2, opacity: 1});
+tl3.fromTo(".secondScrollArrow2", {}, {duration: 2, opacity: 1, onComplete: move(".secondScrollArrow1", ".secondScrollArrow2")}, "<");
 
-gsap.to(".beachPhoto2", {scrollTrigger: {
-    trigger: ".section2",
-    toggleActions: "restart pause restart pause"},
-    immediateRender: false,
-    duration: 2.3,
-    transformOrigin: "top 50%",
-    rotation: 0,
-    ease: Elastic.easeOut.config(1, 0.3)});
+// Hobbies Arrow Animations
+let tl4 = gsap.timeline({scrollTrigger: {
+    trigger: ".section3",
+    toggleActions: "play none none none"},
+    defaults: {opacity: 0}});
 
+tl4.fromTo(".thirdScrollArrow1", {}, {duration: 2, opacity: 1});
+tl4.fromTo(".thirdScrollArrow2", {}, {duration: 2, opacity: 1, onComplete: move(".thirdScrollArrow1", ".thirdScrollArrow2")}, "<");
 
 /* handles arrow movement animation; called upon 2nd arrow fade in completion*/
 function move(arrow1, arrow2) {
