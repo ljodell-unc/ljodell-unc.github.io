@@ -30,8 +30,8 @@ html body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 75vh;
     width: 100%;
-    /*padding-bottom: 30px;*/
 }
 .whoAmI {
     font-family: 'Josefin Sans', sans-serif;
@@ -155,6 +155,15 @@ html body {
 
 */
 
+.topScrollArrow {
+    width: 50px;
+}
+
+.bottomScrollArrow {
+    width: 50px;
+    padding-bottom: 30px;
+}
+/*
 .scrollArrow1 {
     width: 50px;
     /*position: relative;
@@ -162,7 +171,7 @@ html body {
     /*animation: scrollArrow 6s, scrollArrow1 4s;
     animation-delay: 0s, 3s;
     animation-iteration-count: 1, infinite;*/
-}
+/*}
 
 .scrollArrow2 {
     padding-bottom: 30px;
@@ -172,8 +181,7 @@ html body {
     /*animation: scrollArrow 6s, scrollArrow2 4s;
     animation-delay: 0s, 3s;
     animation-iteration-count: 1, infinite;*/
-}
-
+/*}*/ 
 @keyframes scrollArrow {
     0% {opacity: 0;}
     50% {opacity: 0;}
@@ -201,9 +209,17 @@ html body {
     padding: 0;
     margin: 0;
     position: relative;
-    top: -200px;
+    top: -40vh;/*-300px;*/
     z-index: -1;
 }
+
+/*
+.horizontalCentering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}*/
 
 .backgroundInfoContainer {
     margin: auto;
@@ -212,6 +228,7 @@ html body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .whereImfrom {
@@ -224,6 +241,7 @@ html body {
 
 .photoGallery {
     width: 40%;
+    opacity: 0;
 }
 
 #beachPhoto {
@@ -292,33 +310,47 @@ html body {
 }
 
 .favoriteHobbies {
-    padding-top: 30pt;
+    margin: 20px;
+    padding: 20px;
     font-family: 'Josefin Sans', sans-serif;
     color:#446670;
-    font-size: 30pt;
+    font-size: 6vh;
 }
 
 .hobbiesList {
-    margin: auto;
+    margin: 10px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Playfair Display', sans-serif;
     color:#866258;
-    font-size: 15pt;
+    font-size: 3vh;
     flex-wrap: wrap;
     
 }
 
+.centeringHobby {
+    height: 15vh;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7e2c9;
+    box-shadow: -3px 3px 6px #634942;
+    border-radius: 10pt;
+    padding: 0;
+    margin: 10px;
+}
+
 .hobby {
     padding: 10pt;
-    margin: 10pt;
     font-weight: bold;
-    background-color: #f7e2c9;
-    border-radius: 10pt;
-    height: 80px;
-    width:110px;
     text-align: center;
+    
+    /*height: 80px;
+    width:110px;
+    text-align: center;*/
 }
 
 .carolina {
@@ -327,17 +359,18 @@ html body {
 
 .likeMovies {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20pt;
+    font-size: 4vh;
     color:#866258;
     margin-top: 100px;
     margin-bottom: 30px;
 }
 
+/*
 .secondScrollArrow1 {
     width: 50px;
     /*position: relative;
     bottom: 25px;*/
-}
+/*}
 
 .secondScrollArrow2 {
     padding-bottom: 30px;
@@ -345,7 +378,7 @@ html body {
     /*position: relative;
     bottom: 25px;*/
     
-}
+/*}*/
 
 .secondScroll1Active {
     animation: scrollArrow1 4s;
@@ -361,7 +394,7 @@ html body {
 
 .favoriteMovies {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 30pt;
+    font-size: 6vh;
     color:#446670;
     padding-top: 20px;
     
@@ -369,11 +402,12 @@ html body {
 
 .showSelections{
     font-family: 'Playfair Display', sans-serif;
-    font-size: 15pt;
+    font-size: 3vh;
     display: flex;
     justify-content: space-evenly;
     /*align-items: center;*/
     flex-wrap: wrap;
+    width: 70%;
     padding-bottom: 60px;
 
 }
@@ -383,6 +417,9 @@ html body {
     display: block;
     margin: auto;
     text-align: center;
+    width: 10vw;
+    max-width: 200px;
+    
     
     /*
     font-weight: bold;
@@ -399,7 +436,7 @@ html body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 150px;
+    width: 15vw;
 }
 
 .appearOnScroll {
