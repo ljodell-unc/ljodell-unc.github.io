@@ -16,6 +16,10 @@ html body {
     height: 100vh;
 }
 
+.lastSectionFooter {
+    overflow: hidden;
+}
+
 .contentContainer {
     margin: auto;
     display: flex;
@@ -24,6 +28,7 @@ html body {
     align-items: center;
     width: 90%;
     padding-top: 20px;
+    height: 90%;
 }
 .traitsContainer {
     margin: auto;
@@ -53,24 +58,12 @@ html body {
     color: #866258;
     list-style-image: url('../images/bulletPoint_16x16.png');
 }
+
 .traits {
     padding-bottom: 20px;
 }
-/*
-#trait1 {
-    animation: fadeInUpTrait1 2s;
-}
 
-#trait2 {
-    animation: fadeInUpTrait2 3.2s;
-}
-
-#trait3 {
-    animation: fadeInUpTrait3 4.4s;
-}
-*/
 #trait4 {
-   /* animation: fadeInUpTrait4 5.6s;*/
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -82,78 +75,25 @@ html body {
     margin:0;
     max-height: 600px;
     max-width: 600px;
-    /*animation: fadeInRight 1s;*/
 }
 
-.biotext {
-    width: 90%;
-    padding: 20px;
-    margin: 0;
-    font-family: 'Merriweather', sans-serif;
-    font-size: 13pt;
-    background-color: #f7e2c9;
-    border-radius: 20px;
-    animation: fadeInLeft 1s;
-}
-/*
-@keyframes fadeInUp {
-    0% {opacity: 0;
-        transform: translate(0, 20px);}
-    100% {opacity: 1;
-        transform: translate(0, 0px);}
+.centeringArrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
 }
 
-@keyframes fadeInRight {
-    0% {opacity: 0;
-        transform: translate(20px, 0);}
-    100% {opacity: 1;
-        transform: translate(0px, 0);}
+.centeringArrowsHobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 63px;
 }
-
-@keyframes fadeInLeft {
-    0% {opacity: 0;
-        transform: translate(-20px, 0);}
-    100% { opacity: 1;
-        transform: translate(0px, 0);}
-}
-
-@keyframes fadeInUpTrait1 {
-    0% {opacity: 0;
-        transform: translate(0, 20px);}
-    60% {opacity: 0;
-        transform: translate(0, 0px);}
-    100% {opacity: 1;
-        transform: translate(0, 0px);}
-}
-
-@keyframes fadeInUpTrait2 {
-    0% {opacity: 0;
-        transform: translate(0, 20px);}
-    60% {opacity: 0;
-        transform: translate(0, 0px);}
-    100% {opacity: 1;
-        transform: translate(0, 0px);}
-}
-
-@keyframes fadeInUpTrait3 {
-    0% {opacity: 0;
-        transform: translate(0, 20px);}
-    60% {opacity: 0;
-        transform: translate(0, 0px);}
-    100% {opacity: 1;
-        transform: translate(0, 0px);}
-}
-
-@keyframes fadeInUpTrait4 {
-    0% {opacity: 0;
-        transform: translate(0, 20px);}
-    60% {opacity: 0;
-        transform: translate(0, 0px);}
-    100% {opacity: 1;
-        transform: translate(0, 0px);}
-}
-
-*/
 
 .topScrollArrow {
     width: 50px;
@@ -163,72 +103,24 @@ html body {
     width: 50px;
     padding-bottom: 30px;
 }
-/*
-.scrollArrow1 {
-    width: 50px;
-    /*position: relative;
-    bottom: 25px;*/
-    /*animation: scrollArrow 6s, scrollArrow1 4s;
-    animation-delay: 0s, 3s;
-    animation-iteration-count: 1, infinite;*/
-/*}
-
-.scrollArrow2 {
-    padding-bottom: 30px;
-    width: 50px;
-    /*position: relative;
-    bottom: 25px;*/
-    /*animation: scrollArrow 6s, scrollArrow2 4s;
-    animation-delay: 0s, 3s;
-    animation-iteration-count: 1, infinite;*/
-/*}*/ 
-@keyframes scrollArrow {
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes scrollArrow1 {
-    0% {transform: translate(0, 0);}
-    60% {transform: translate(0, 0);}
-    75% {transform: translate(0, 10px);}
-    95% {transform: translate(0, 0);}
-}
-
-@keyframes scrollArrow2 {
-    0% {transform: translateY(0);}
-    60% { transform: translateY(0);}
-    65% {transform: translateY(0);}
-    80% {transform: translateY(10px);}
-    100% {transform: translateY(0);}
-}
 
 #swirl {
-    /*bottom: 5vh;*/
     width: 100%;
     padding: 0;
     margin: 0;
     position: relative;
-    top: -40vh;/*-300px;*/
+    top: -30vh;
     z-index: -1;
 }
 
-/*
-.horizontalCentering {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}*/
-
 .backgroundInfoContainer {
     margin: auto;
-    padding:0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .whereImfrom {
@@ -241,7 +133,6 @@ html body {
 
 .photoGallery {
     width: 40%;
-    opacity: 0;
 }
 
 #beachPhoto {
@@ -249,23 +140,18 @@ html body {
     position: relative;
     top: 10vh;
     left: -5vw;
-    
     z-index: 1;
-
 }
 
 .beachPhoto2 {
     width: 40%;
     position: relative;
-    left: 22vw;
-    
+    left: 22vw; 
 }
 
 .soundPhoto{
     width: 40%;
-    
     position: relative;
-    
 }
 
 .photo{
@@ -273,40 +159,51 @@ html body {
     padding:0;
 }
 
-.animatedPhoto {
-    animation: swing 3s;
-    
+.whereImFromRightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin: 5px;
+    padding: 0;
 }
 
-@keyframes swing {
-    0% {transform: rotate(15deg);}
-    15% {transform: rotate(-15deg);}
-    25% {transform: rotate(6deg);}
-    33% {transform: rotate(-6deg);}
-    40% {transform: rotate(2deg);}
-    45% {transform: rotate(-2deg);}
-    50% {transform: rotate(1deg);}
-    55% {transform: rotate(-1deg);}
-    60% {transform: rotate(.5deg);}
-    65% {transform: rotate(-.5deg);}
-    70% {transform: rotate(0deg);}
-}
-
-#whereImFromTitle{
+.whereImFromTitle{
     font-family: 'Josefin Sans', sans-serif;
     color:#446670;
     font-size: 7vh;
-    padding-left: 20px;
-   
+    padding: 0;
+    margin: 0;
 }
 
-#outerBanks{
+.outerBanks{
     font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
     color: #866258;
     font-size: 7vh;
-    padding-left: 20px;
-    /*flex-grow: 2;*/
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.biotext {
+    width: 90%;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+    color: #634942;
+    font-size: 13pt;
+    background-color: #f7e2c9;
+    box-shadow: 3px 3px 6px #634942;
+    border-radius: 10pt;
+}
+
+.indent {
+    text-indent: 30pt;
+    margin: 0;
+    padding: 5px;
 }
 
 .favoriteHobbies {
@@ -333,24 +230,21 @@ html body {
 .centeringHobby {
     height: 15vh;
     width: 12vw;
+    min-width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f7e2c9;
-    box-shadow: -3px 3px 6px #634942;
+    box-shadow: 3px 3px 6px #634942;
     border-radius: 10pt;
-    padding: 0;
+    padding: 10px;
     margin: 10px;
 }
 
 .hobby {
-    padding: 10pt;
+    padding: 5px;
     font-weight: bold;
     text-align: center;
-    
-    /*height: 80px;
-    width:110px;
-    text-align: center;*/
 }
 
 .carolina {
@@ -361,43 +255,20 @@ html body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 4vh;
     color:#866258;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-/*
-.secondScrollArrow1 {
-    width: 50px;
-    /*position: relative;
-    bottom: 25px;*/
-/*}
-
-.secondScrollArrow2 {
-    padding-bottom: 30px;
-    width: 50px;
-    /*position: relative;
-    bottom: 25px;*/
-    
-/*}*/
-
-.secondScroll1Active {
-    animation: scrollArrow1 4s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
-
-.secondScroll2Active {
-    animation: scrollArrow2 4s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
+    /* margin-top: 60px;
+    margin-bottom: 30px; */
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    /* position: relative;
+    bottom: 20px; */
 }
 
 .favoriteMovies {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 6vh;
     color:#446670;
-    padding-top: 20px;
-    
+    padding-top: 20px;  
 }
 
 .showSelections{
@@ -405,7 +276,6 @@ html body {
     font-size: 3vh;
     display: flex;
     justify-content: space-evenly;
-    /*align-items: center;*/
     flex-wrap: wrap;
     width: 70%;
     padding-bottom: 60px;
@@ -419,17 +289,6 @@ html body {
     text-align: center;
     width: 10vw;
     max-width: 200px;
-    
-    
-    /*
-    font-weight: bold;
-    background-color: #f7e2c9;
-    border-radius: 10pt;
-    height: 180px;
-    width:110px;
-    text-align: center;
-    color:#866258
-    */
 }
 
 .lotr {
