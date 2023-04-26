@@ -84,9 +84,6 @@ html body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* DONE IN ORDER TO HAVE ALL SKILLS THE SAME WIDTH
-    justify-content: center;
-    align-items: flex-start;*/
 }
 
 .skill {
@@ -112,43 +109,15 @@ html body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -40px;
+    bottom: 20px;
 }
 
-.scrollArrow1 {
+.topScrollArrow {
     width: 50px;
-    animation: scrollArrow 15s, scrollArrow1 4s;
-    animation-delay: 0s, 10s;
-    animation-iteration-count: 1, infinite;
 }
 
-.scrollArrow2 {
+.bottomScrollArrow {
     width: 50px;
-    bottom: 140px;
-    animation: scrollArrow 15s, scrollArrow2 4s;
-    animation-delay: 0s, 10s;
-    animation-iteration-count: 1, infinite;
-}
-
-@keyframes scrollArrow {
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes scrollArrow1 {
-    0% {transform: translate(0, 0);}
-    60% {transform: translate(0, 0);}
-    75% {transform: translate(0, 10px);}
-    95% {transform: translate(0, 0);}
-}
-
-@keyframes scrollArrow2 {
-    0% {transform: translateY(0);}
-    60% { transform: translateY(0);}
-    65% {transform: translateY(0);}
-    80% {transform: translateY(10px);}
-    100% {transform: translateY(0);}
 }
 
 .pastProjects {
@@ -249,7 +218,7 @@ html body {
 .website {
     background-color:#f7e2c9;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 10px;
     width: 30%;
     font-family: 'Playfair Display', sans-serif;
@@ -265,7 +234,7 @@ html body {
 .lmm {
     background-color:#f7e2c9;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 10px;
     width: 30%;
     font-family: 'Playfair Display', sans-serif;
@@ -281,7 +250,7 @@ html body {
 .dor {
     background-color:#f7e2c9;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 10px;
     width: 30%;
     font-family: 'Playfair Display', sans-serif;
@@ -290,7 +259,7 @@ html body {
 }
 
 .work {
-    background-color:#866258;
+    background-color: #866258;
     height: 100vh;
     display: flex;
     flex-direction: column;
